@@ -1,0 +1,24 @@
+
+
+
+proceeding:
+A. check if all constraints are met
+- these constraints are listed at the bottom of the exercise
+- if any of the constraints are broken , get new data.
+- you can define a function to check the constrains.
+
+B. define the candidates for 'X'
+- note that the candidates for 'x' can only fall between the
+smallest and the largest values of both sets of data.
+
+if A={2,4} and B={8,16,32}
+the candidates of 'x' from these sets are between 2 and 32
+hence range[2 - 32] defines all possible candidates.
+
+C. counting your successful candidates x.
+- after you have the range you should loop through it
+examining if the candidate meets the predefined requirements
+1. candidate % ai == 0; and
+2. bi % candidate == 0;
+
+if the candidate passed both tests, you can store or count it.
