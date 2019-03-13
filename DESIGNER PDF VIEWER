@@ -74,3 +74,20 @@ int main()
     }
     printf("%d",max*1*len);
 }
+ 
+ MORE PRECISE CODE FOR MY FUTURE REFERENCE TAKEN FROM DISCUSSIONS:
+ 
+ while(word[i] != '\0')
+ {
+        value = a[(int)s[i]-97];// suppose string is abc now when its s[0] it is a whose ascii value is 97,
+                                 //so 97-97 gives its index position 0 corresponding to the a array.
+        max = (value > max)?value:max;
+        i++;
+    }
+    
+    printf("%d",max*i);
+
+
+
+
+
